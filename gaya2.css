@@ -1,0 +1,144 @@
+body{
+	background: white;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.kotak1{
+	height: 200px;
+	width: 200px;
+	border: 2px solid white;
+	background: blue;
+	position: relative;
+	transition: 0.5s;
+}
+.bulat1{
+	height: 50px;
+	width: 50px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	right: -25px;
+	bottom: -25px;
+	transition: 0.5s;
+}
+.bulat2{
+	height: 50px;
+	width: 50px;
+	background: pink;
+	border-radius: 50%;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	transition: 0.5s;
+}
+.bulat1:hover{
+	bottom: 175px;
+}
+.bulat2:hover{
+	top: 175px;
+}
+.zz{
+	position: relative;
+	padding: 8px 30px;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	border: 2px solid #000;
+	transition: 0.5s;
+}
+.zz:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: #000;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+	transform-origin: left;
+}
+.zz:hover:before{
+	transform: scaleX(1);
+	transition: transform 0.5s;
+	transform-origin: right;
+}
+.zz:hover{
+	color: white;
+}
+.zz:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: #000;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+	transform-origin: right;
+}
+.zz:hover:after{
+	transform: scaleX(1);
+	transition: transform 0.5s;
+	transform-origin: left;
+}
+
+
+.petak{
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	border: 2px #1780dd solid; 
+	height: 270px; 
+	padding: 10px; 
+	text-align: left; 
+	width: 330px;
+	transition: 0.5s;
+}
+.petak:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	color: #ffffff;
+	background: #59c5ff;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+	transform-origin: left;
+}
+.petak:hover:before{
+	transform: scaleX(1);
+	transition: transform 0.5s;
+	transform-origin: right;
+}
+.petak:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: #000000c9;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+	transform-origin: right;
+}
+.petak:hover:after{
+	transform: scaleX(1);
+	transition: transform 0.5s;
+	transform-origin: left;
+}
+.petak:hover{
+	color: white;
+}
